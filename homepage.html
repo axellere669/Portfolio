@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <style>
+        @font-face {
+          font-family: 'Indie Flower';
+          src: url('../../portfolio/') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+        }
+      </style>      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hp.css">
+    <link rel="icon" href="favicon-96x96.png" sizes="96x96"/>
+    <title>Axelle Broyer</title>
+</head>
+
+  <header>
+    <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home" title="accueil">accueil</a></li>
+          <li><a href="#projects" title="projects">projets</a></li>
+          <li><a href="#about" title="cv">qui suis-je?</a></li>
+          <li><a href="#contact" title="contact">contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+      <section id="home" class="page">
+        <div class="container">
+          <h2>bienvenue</h2>
+          <div class="content">
+            <aside>
+              <img src="photo_homepage.JPG" alt="me">
+            </aside>
+            <p>
+            Bienvenue! Je suis Axelle Broyer, 20 ans, étudiante en informatique à l'IUT 2 de Grenoble.
+            Ici, vous trouverez principalement mon CV ainsi que les projets réalisés dans le cadre de mon BUT, appelés "SAE".
+            Ce sont des projets qui prennent plusieurs jours ou plusieurs mois, sont à la croisée de plusieurs matières et permettent de simuler des situations réelles d'entreprise.
+            Ce portfolio est à mon image et en constante évolution!
+            Merci d'y faire un tour.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="projects" class="page">
+        <div class="container">
+          <h2>projets universitaires</h2>
+          <p>Voici quelques SAE (Situations d'Apprentissage Encadrées) qui m'ont beaucoup appris et que j'ai trouvé très intéressantes !</p>
+          <div class="line">
+            <div class="project-item">
+            <a href="s101.html">
+              <img src="s101a.jpeg" alt="s1.01" class="sae">
+              <span class="show_more">show more</span>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="s103.html">
+              <img src="s103.png" alt="s1.03" class="sae">
+              <span class="show_more">show more</span>
+            </a>
+          </div>
+          <div class="project-item">
+          <a href="s203.html">
+            <img src="s203.png" alt="s2.03" class="sae">
+            <span class="show_more">show more</span>
+          </a>
+        </div>
+        </div>
+          <div class="line">
+            <div class="project-item">
+            <a href="s104.html">
+              <img src="s104.jpeg" alt="s1.04" class="sae">
+              <span class="show_more">show more</span>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="s204.html">
+              <img src="s204.png" alt="s2.04" class="sae">
+              <span class="show_more">show more</span>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="s105.html">
+              <img src="s105.png" alt="s1.05" class="sae">
+              <span class="show_more">show more</span>
+            </a>
+          </div>
+          </div>
+          <div class="last-line">
+            <div class="project-item">
+              <a href="megasae.html">
+                <img src="megasae.png" alt="mega SAE" class="sae">
+                <span class="show_more">show more</span>
+              </a>
+            </div>
+        </div>
+
+
+      </section>
+      <section id="about" class="page">
+        <div class="container">
+          <h2>qui suis-je ?</h2>
+          <br>
+          <br>
+          <h3><a href="CV Axelle BROYER.pdf">📄 mon cv</a></h3>
+        </div>
+
+
+
+      </section>
+      <section id="contact" class="page">
+        <div class="container">
+        <h2>contact</h2>
+        <br>
+        <br>
+        <p>
+          📞 07 67 73 04 48
+          <br>
+          📮 broyer.axelle@gmail.com
+          <br>
+          📍 29 rue Gabriel Péri
+        </p>
+        </div>
+      </section>
+
+      <script>
+        let section = document.querySelectorAll('section');
+        let navLi = document.querySelectorAll('nav ul li a');
+
+        window.onscroll = () => {
+          section.forEach(sec => {
+
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+              navLi.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('nav ul li a[href*=' + id + ']').classList.add('active');
+              });
+            };
+          });
+        };
+
+
+      </script>
+</html>

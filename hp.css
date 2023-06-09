@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    top:0; left:0; right:0;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Style de la navbar */
+.navbar {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  /* Style des liens */
+  .navbar a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Style des liens au survol */
+  .navbar a:hover {
+    background-color: #f7a8b8;
+    color: #fff;
+  }
+  
+  /* Style du lien actif */
+  .navbar .active {
+    background-color: #f7a8b8;
+    color: #fff;
+  }
+  
+  /* Style de la liste */
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  /* Style des sections */
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+  }
+
+  section h2 {
+    color: #f7a8b8;
+  }
+
+
+
+  /* Style des images */
+
+  .container {
+    position: relative;
+  }
+
+  .sae {
+    display: flex;
+  }
+  
+  .show_more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .container:hover .show_more {
+    display: block;
+  }
+
+  /* Style de la page d'accueil */
+
+
+  #home {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 300px;
+  }
+
+  #home h2 {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  
+
+  #home aside {
+    margin-left: 40px;
+  }
+
+  #home aside img {
+    border-radius: 65%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 380px;
+    margin-right: 70px;
+  }
+
+  .content {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+
+  .content p {
+    align-self: center;
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+    padding-right: 100px;
+  }
+
+
+
+
+
+
+
+
+  /* Style de la section uni projects */
+
+  .container .line {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  #projects .container {
+    margin-bottom: 50px;
+  }
+
+  .sae {
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px #f7a8b8;
+  }
+
+  .last-line {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  #projects h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #projects p {
+    margin-bottom: 40px;
+  }
+
+  .project-item {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .show_more {
+    position: absolute;
+    font-weight: 700;
+    height: 40px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #f7a8b8;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  .project-item:hover .show_more {
+    opacity: 1;
+  }
+
+  .sae {
+    width: 250px;
+    height: 250px;
+  }
+  
+  
+
+  /* Style de la page à propos */
+
+  #about a:link {
+    text-decoration: none;
+    color: #f1748d;
+  }
+
+  #about a:visited {
+    text-decoration: none;
+    color: #f1748d;
+  }
+
+  h3 {
+    text-align: center;
+  }
